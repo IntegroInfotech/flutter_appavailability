@@ -4,20 +4,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab2039d-5a6c-4b15-bb21-e5e3f870bb62" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dab2039d-5a6c-4b15-bb21-e5e3f870bb62" name="Default" comment="migrated to null safety">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/example_proj_lib_main_dart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_appavailability.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_appavailability.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_appavailability.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_appavailability.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\Levin\.android\avd\Pixel_3a_API_30_x86.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@3208a854]" />
   <component name="FindInProjectRecents">
     <findStrings>
       <find>FlutterPlugin</find>
@@ -34,12 +33,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="23" />
-    <option name="width" value="1420" />
-    <option name="height" value="1057" />
   </component>
   <component name="ProjectId" id="1tNLJJLmPw10yz4Coz5P3qZg0Bi" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -149,8 +142,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/android/src/main/java/com/pichillilorenzo" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -253,6 +249,60 @@
       <option name="presentableId" value="Default" />
       <updated>1536623487994</updated>
     </task>
+    <task id="LOCAL-00001" summary="migrated to null safety">
+      <created>1622604844141</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622604844142</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="migrated to null safety" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrated to null safety" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="39" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622987142088">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="39" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622987142088" />
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1622604843319">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622604843319" />
+    <state x="554" y="249" key="FileChooserDialogImpl" timestamp="1622986211131">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="554" y="249" key="FileChooserDialogImpl/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622986211131" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1622987673465">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622987673465" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1622987673464">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622987673464" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1622987673464">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622987673464" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1622987673464">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622987673464" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1622604847917">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622604847917" />
+    <state x="437" y="285" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1622604796587">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="437" y="285" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622604796587" />
+    <state x="362" y="96" key="new project wizard" timestamp="1622986286913">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="362" y="96" key="new project wizard/0.0.1366.768/-1280.-32.1280.800@0.0.1366.768" timestamp="1622986286913" />
   </component>
 </project>

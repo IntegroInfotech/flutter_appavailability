@@ -5,8 +5,7 @@ import 'package:flutter/services.dart';
 
 /// Main class of the plugin.
 class AppAvailability {
-  static const MethodChannel _channel =
-      const MethodChannel('com.pichillilorenzo/flutter_appavailability');
+  static const MethodChannel _channel = const MethodChannel('com.pichillilorenzo/flutter_appavailability');
 
   /// Check if an app is available with the given [uri] scheme.
   ///
@@ -26,26 +25,17 @@ class AppAvailability {
     args.putIfAbsent('uri', () => uri);
 
     if (Platform.isAndroid) {
-      Map<dynamic, dynamic> app = await (_channel.invokeMethod(
-          "checkAvailability", args) as FutureOr<Map<dynamic, dynamic>>);
-      return {
-        "app_name": app["app_name"],
-        "package_name": app["package_name"],
-        "versionCode": app["versionCode"],
-        "version_name": app["version_name"]
-      };
+      Map<dynamic, dynamic>? app = await _channel.invokeMethod<Map<dynamic, dynamic>?>("checkAvailability", args);
+      if (app != null)
+        return {"app_name": app["app_name"], "package_name": app["package_name"], "versionCode": app["versionCode"], "version_name": app["version_name"]};
+      else
+        throw PlatformException(code: "", message: "App not found $uri");
     } else if (Platform.isIOS) {
-      bool appAvailable = await (_channel.invokeMethod(
-          "checkAvailability", args) as FutureOr<bool>);
-      if (!appAvailable) {
+      bool? appAvailable = await _channel.invokeMethod<bool?>("checkAvailability", args);
+      if (appAvailable == null || !appAvailable) {
         throw PlatformException(code: "", message: "App not found $uri");
       }
-      return {
-        "app_name": "",
-        "package_name": uri,
-        "versionCode": "",
-        "version_name": ""
-      };
+      return {"app_name": "", "package_name": uri, "versionCode": "", "version_name": ""};
     }
 
     return null;
@@ -61,12 +51,7 @@ class AppAvailability {
       List<Map<String, String?>> list = <Map<String, String?>>[];
       for (var app in apps) {
         if (app is Map) {
-          list.add({
-            "app_name": app["app_name"],
-            "package_name": app["package_name"],
-            "versionCode": app["versionCode"],
-            "version_name": app["version_name"]
-          });
+          list.add({"app_name": app["app_name"], "package_name": app["package_name"], "versionCode": app["versionCode"], "version_name": app["version_name"]});
         }
       }
 
@@ -95,9 +80,8 @@ class AppAvailability {
     if (Platform.isAndroid) {
       await _channel.invokeMethod("launchApp", args);
     } else if (Platform.isIOS) {
-      bool appAvailable =
-          await (_channel.invokeMethod("launchApp", args) as FutureOr<bool>);
-      if (!appAvailable) {
+      bool? appAvailable = await _channel.invokeMethod<bool?>("launchApp", args);
+      if (appAvailable == null || !appAvailable) {
         throw PlatformException(code: "", message: "App not found $uri");
       }
     }
